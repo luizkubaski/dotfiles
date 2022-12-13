@@ -1,0 +1,101 @@
+{
+  "python.analysis.typeCheckingMode": "basic",
+  "python.linting.pylintArgs": ["--disable=C0103"],
+  "python.linting.enabled": true,
+  "python.languageServer": "Pylance",
+
+  "tabnine.experimentalAutoImports": true,
+  "python.formatting.provider": "black",
+  "vim.smartRelativeLine": true,
+  "editor.foldingMaximumRegions": 20000,
+  "editor.acceptSuggestionOnEnter": "off",
+  "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
+  "editor.formatOnSaveMode": "file",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false
+  },
+  "julia.symbolCacheDownload": true,
+  "julia.enableTelemetry": false,
+  "julia.enableCrashReporter": false,
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#a75600"
+  },
+  "autoDocstring.docstringFormat": "numpy",
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "editor.parameterHints.enabled": false,
+  "markdownlint.config": {
+    "[markdown]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnPaste": true
+    },
+    "MD026": { "punctuation": ".,;:" }
+  },
+  "files.associations": {
+    "*.md": "markdown"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.language": "en-GB",
+  "cSpell.userWords": ["arbers", "matplotlib"],
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "keyboard.dispatch": "keyCode",
+  "editor.lineNumbers": "relative",
+  "vim.enableNeovim": true,
+  "vim.neovimPath": "home/luizkubaski/.config/nvim",
+  "launch": {
+    "configurations": [
+      {
+        "name": "Python: Current File",
+        "type": "python",
+        "request": "launch",
+        "program": "${file}",
+        "console": "integratedTerminal",
+        "cwd": "${workspaceFolder}",
+        "env": { "PYTHONPATH": "${cwd}" },
+        "terminal.integrated.env.windows": {
+          "PYTHONPATH": "${workspaceFolder}/."
+        }
+      }
+      // {
+      //   "name": "Linux",
+      //   "includePath": [
+      //     "${workspaceFolder}",
+      //     "${workspaceFolder}/src",
+      //     "${workspaceFolder}/src/scip",
+      //     "${workspaceFolder}/src/lpi"
+      //   ],
+      //   "defines": [
+      //     "SOPLEX_WITH_GMP",
+      //     "SCIP_WITH_GMP",
+      //     "SCIP_WITH_ZIMPL"
+      //   ],
+      //   "browse": {
+      //     "path": [
+      //         "${workspaceFolder}/src"
+      //     ]
+      //   }
+      // }
+    ]
+  },
+  "editor.minimap.side": "left",
+  "editor.minimap.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportGeneralTypeIssues": "warning"
+  },
+  "jupyter.pylanceHandlesNotebooks": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": ["--ignore=E501, E741"],
+  "workbench.colorTheme": "Monokai Dark Pycharm-flymin",
+  "code-runner.executorMap": {
+    "python": "\"$pythonPath\" -u $fullFileName"
+  },
+  "diffEditor.originalEditable": true,
+  "editor.formatOnSave": true,
+  "python.formatting.blackArgs": ["-l 120 -S"]
+}
