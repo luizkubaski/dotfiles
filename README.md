@@ -22,3 +22,15 @@ stow the_app
 and this will automatically create symlinks for the dotfiles.
 
 Hint: if you have different environments you can create branches on github for each environment.
+
+What if one day stow just doesn't exist anymore? Well, at the end of the day all that stow does is create symlinks for the dofiles.
+
+TODO:
+
+<s>- nbfc-linux </s>
+
+- nvidia-drivers
+- pipewire
+- audio troubleshooting
+- explain some utilities? (pywall, polybar)
+- add references.
