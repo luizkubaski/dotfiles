@@ -1,3 +1,1 @@
-require("kubaski")
-
-
+require('kubaski')
