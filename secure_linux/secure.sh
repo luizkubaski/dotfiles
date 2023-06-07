@@ -18,7 +18,6 @@ if yay -Qs ufw &> /dev/null && yay -Qs fail2ban &> /dev/null; then
     sudo ufw enable
 
     # --- Harden /etc/sysctl.conf
-    sudo sysctl kernel.modules_disabled=1
     sudo sysctl -a
     sudo sysctl -A
     sudo sysctl mib
